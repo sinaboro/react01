@@ -21,11 +21,6 @@ public class TodoController {
   @Autowired
   private TodoService service;
 
-  @GetMapping("/test2")
-  public void test2() {
-	  
-  }
-  
   @GetMapping("/test")
   public ResponseEntity<?> testTodo() {
     String str = service.testService(); // 테스트 서비스 사용
